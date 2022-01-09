@@ -1,0 +1,26 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('build12 job') {
+            steps {
+                echo 'build12 success'
+            }
+        }
+        stage('deploy12 job') {
+            steps {
+                echo 'deploy12 success'
+            }
+        }
+        stage('test34 job') {
+            steps {
+                echo 'test34 success'
+            }
+        }
+        stage('release341 job') {
+            steps {
+                echo 'release341 success'
+            }
+        }
+    }
+}
